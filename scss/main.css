@@ -1,0 +1,461 @@
+.nav-bg{
+  background-color: white;
+}
+.navbar a:hover {
+  background-color: #2193b0;
+color: black;
+}
+
+.ab-pad{
+  padding-left: 10%;
+}
+.s-top{
+  padding-top: 0%;
+}
+nav{
+  transition: background-color 0.4s ease-out;
+}
+.fixed-nav-bar {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9999;
+width: 100%;
+height: 70px;
+background-color: #6dd5ed ;
+
+}
+/* * {
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  word-break: break-word;
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: AvertaStd,-apple-system,BlinkMacSystemFont,sans-serif!important;
+  overscroll-behavior: none;
+} */
+.txt{
+font-family: AvertaStd,-apple-system,BlinkMacSystemFont,sans-serif!important;
+font-size: 54px;
+margin-left: 20%;
+}
+.btn-colr{
+/* background-color: #6dd5ed; */
+background-image: linear-gradient(to right, #2193b0 0%, #6dd5ed   51%, #F4F5FF 100%);
+}
+.card{
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+width: 10%!important;
+}
+
+.h-divider .shado {
+  overflow: hidden;
+  height: 20px;
+}
+
+
+.h-divider .shado:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px black;
+}
+
+.parallax {
+/* The image used */
+background-image: url("img/parllax.webp") !important;
+/* background-image: linear-gradient(to right, #2193b0 0%, #08e7f7   51%, #F4F5FF 100%); */
+opacity: 0.5;
+background-color:black;
+/* Set a specific height */
+min-height: 500px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+body .ui {
+width: 900px;
+margin: 0 auto;
+margin-top: 50px;
+font-family: 'Source Sans Pro', sans-serif;
+color: white;
+box-shadow: none;
+}
+body .ui ul {
+margin: 0px 30px 10px 0px;
+padding: 0;
+list-style-type: none;
+font-size: 11px;
+font-weight: 400;
+line-height: 20px;
+}
+body .ui .drop {
+z-index: -3;
+opacity: 0;
+width: 240px;
+height: 10px;
+background: #6dd5ed;
+position: absolute;
+color: white;
+bottom: 0;
+padding: 12px 30px 21px 30px;
+-webkit-transition-property: bottom,opacity;
+transition-property: bottom,opacity;
+-webkit-transition-duration: .3s;
+        transition-duration: .3s;
+}
+body .ui .drop p {
+color: #f8fbfa;
+}
+body .ui_box {
+width: 300px;
+height: 220px;
+position: relative;
+background: #3d3d3d;
+float: left;
+box-shadow: -1px 0px rgba(255, 255, 255, 0.07);
+cursor: pointer;
+-webkit-transform: scale(1);
+        transform: scale(1);
+-webkit-transition-property: background,-webkit-transform;
+transition-property: background,-webkit-transform;
+transition-property: transform,background;
+transition-property: transform,background,-webkit-transform;
+-webkit-transition-duration: .3s;
+        transition-duration: .3s;
+}
+body .ui_box__inner {
+padding: 30px;
+}
+body .ui_box__inner span {
+font-size: 36px;
+font-weight: 700;
+}
+body .ui_box__inner .progress {
+width: 100%;
+margin-top: 10px;
+height: 6px;
+background: rgba(0, 0, 0, 0.3);
+margin-bottom: 15px;
+}
+body .ui_box__inner .progress_graph {
+float: right;
+border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+width: 85px;
+text-align: center;
+position: relative;
+padding-left: 20px;
+top: 24px;
+}
+body .ui_box__inner .progress_graph__bar--1 {
+width: 10px;
+height: 20px;
+background: #6dd5ed;
+float: left;
+margin-right: 10px;
+position: relative;
+bottom: -10px;
+-webkit-animation: graph 1s;
+}
+body .ui_box__inner .progress_graph__bar--2 {
+width: 10px;
+-webkit-animation: graph2 1s;
+height: 30px;
+float: left;
+margin-right: 10px;
+background: #6dd5ed;
+}
+body .ui_box__inner .progress_graph__bar--3 {
+width: 10px;
+height: 24px;
+margin-right: 10px;
+-webkit-animation: graph3 1s;
+background: #6dd5ed;
+float: left;
+position: relative;
+bottom: -6px;
+}
+body .ui_box__inner .progress_graph__bar--4 {
+width: 10px;
+height: 14px;
+-webkit-animation: graph4 1s;
+bottom: -16px;
+position: relative;
+background: #6dd5ed;
+float: left;
+}
+body .ui_box__inner .progress_bar {
+height: 6px;
+float: left;
+width: 58%;
+background: #6dd5ed;
+-webkit-animation: bar 2s;
+}
+body .ui_box__inner .progress_bar--two {
+height: 6px;
+float: left;
+width: 78%;
+background: #6dd5ed;
+-webkit-animation: bar2 2s;
+}
+body .ui_box h2 {
+font-weight: normal;
+font-size: 16px;
+margin: -4px 0px 3px 0px;
+}
+body .ui_box p {
+font-size: 11px;
+color: #b6b6b6;
+clear: left;
+font-weight: 300;
+width: 160px;
+margin: 2px 0px 15px 0px;
+}
+body .ui_box:hover {
+background: #6dd5ed;
+-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+-webkit-transition-property: background,-webkit-transform;
+transition-property: background,-webkit-transform;
+transition-property: transform,background;
+transition-property: transform,background,-webkit-transform;
+-webkit-transition-duration: .3s;
+        transition-duration: .3s;
+position: relative;
+z-index: 1;
+}
+
+.ui_box:hover > .ui_box__inner p {
+color: #b3dacb;
+}
+
+.ui_box:hover > .drop {
+-webkit-transition-property: bottom,opacity;
+transition-property: bottom,opacity;
+-webkit-transition-duration: .3s;
+        transition-duration: .3s;
+bottom: -42px;
+opacity: 1;
+}
+
+.ui_box:hover > .drop .arrow {
+-webkit-transition-property: -webkit-transform;
+transition-property: -webkit-transform;
+transition-property: transform;
+transition-property: transform, -webkit-transform;
+-webkit-transition-duration: 1s;
+        transition-duration: 1s;
+-webkit-transform: rotate(765deg);
+        transform: rotate(765deg);
+}
+
+.ui_box:hover > .ui_box__inner .progress_graph > div {
+background: white;
+}
+
+.ui_box:hover > .ui_box__inner .progress .progress_bar, .ui_box:hover > .ui_box__inner .progress .progress_bar--two {
+background: white;
+}
+
+.stat_left {
+float: left;
+}
+
+.arrow {
+width: 4px;
+height: 4px;
+-webkit-transition-property: -webkit-transform;
+transition-property: -webkit-transform;
+transition-property: transform;
+transition-property: transform, -webkit-transform;
+-webkit-transition-duration: 1s;
+        transition-duration: 1s;
+-webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+-webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+border-top: 1px solid #CDEAD3;
+border-right: 1px solid #CDEAD3;
+float: right;
+position: relative;
+top: -24px;
+right: 0px;
+}
+
+@-webkit-keyframes bar {
+from {
+  width: 0px;
+}
+to {
+  width: 58%;
+}
+}
+
+@keyframes bar {
+from {
+  width: 0px;
+}
+to {
+  width: 58%;
+}
+}
+@-webkit-keyframes bar2 {
+from {
+  width: 0px;
+}
+to {
+  width: 78%;
+}
+}
+@keyframes bar2 {
+from {
+  width: 0px;
+}
+to {
+  width: 78%;
+}
+}
+@-webkit-keyframes graph {
+from {
+  height: 0px;
+}
+to {
+  height: 20px;
+}
+}
+@keyframes graph {
+from {
+  height: 0px;
+}
+to {
+  height: 20px;
+}
+}
+@-webkit-keyframes graph2 {
+from {
+  height: 0px;
+}
+to {
+  height: 30px;
+}
+}
+@keyframes graph2 {
+from {
+  height: 0px;
+}
+to {
+  height: 30px;
+}
+}
+@-webkit-keyframes graph3 {
+from {
+  height: 0px;
+}
+to {
+  height: 24px;
+}
+}
+@keyframes graph3 {
+from {
+  height: 0px;
+}
+to {
+  height: 24px;
+}
+}
+@-webkit-keyframes graph4 {
+from {
+  height: 0px;
+}
+to {
+  height: 13px;
+}
+}
+@keyframes graph4 {
+from {
+  height: 0px;
+}
+to {
+  height: 13px;
+}
+}
+
+
+/* contact form */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-image: linear-gradient(to right, #2193b0 0%, #6dd5ed   51%, #F4F5FF 100%);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.cont {
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* contact end */
+
+/* Subscription Start */
+.sv-col{
+  color:#2193b0 !important;
+}
+/* Subscription end */
